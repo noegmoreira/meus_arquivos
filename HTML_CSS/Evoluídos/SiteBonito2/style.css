@@ -1,0 +1,125 @@
+* {
+        
+}
+
+body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(0, 102, 170);
+        color: #e0e0e0;
+        padding: 10%;
+        line-height: 1.6;
+}
+
+p {
+        text-align: justify;
+}
+
+header {
+        background-image: linear-gradient(to bottom, rgb(120, 202, 250), rgb(0, 174, 255));
+        padding: 1%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 217, 255, 0.4);          
+}
+
+nav {
+        background-image: linear-gradient(to bottom, rgb(139, 214, 248), rgb(0, 214, 252));
+        padding: 1%;
+        color: white;
+        padding: 15px 30px;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 4, 255, 0.4);
+        border-radius: 10px;            
+}
+
+
+a {
+        color: rgb(99, 127, 255);
+        background-color: rgb(110, 255, 255);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px;
+        border-radius: 5px;
+        border-left: 5px solid rgb(0, 174, 255);
+        border-right: 2px solid transparent; 
+        transition: border-right 0.8s ease;
+}
+
+a:hover {
+        color: rgb(0, 104, 104);
+        border-right: 13px solid rgb(110, 255, 255); 
+}
+
+a:hover::after {
+        content: "🔗";
+        animation: FadeIn 1s ease-in-out;
+}
+
+main {
+    max-height: 5000px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: ;
+}
+
+
+article {
+        background-color: #0c5fca;
+        padding: 1%;
+        border-radius: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+        background-color: rgb(26, 92, 153);
+        font-family: 'Courier New', Courier, monospace;
+        padding: 1%;
+        border-radius: 10px;
+        border-bottom: 5px solid rgb(11, 34, 110);
+        margin-bottom: 10px;
+        box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.473);
+}
+
+section:hover {
+        font-size: 1.1em;
+        padding: 1.5%;
+        transition: padding 0.8s ease-in-out;
+        transition: font-size 0.8s ease-in-out;
+}
+
+ul {
+        background-color: rgb(5, 79, 177);
+        padding: 20px;
+        border-radius: 40px;
+}
+
+li {
+        color: rgb(0, 0, 0);
+        background-color: #0d72f7;
+        border-radius: 10px;
+        border-left: 5px solid rgb(11, 41, 175);
+        list-style: none;
+        margin: 10px;
+        padding: 5px;
+}
+
+footer {
+        background-color: #0d72f7;
+        border-radius: 10px 20px;
+}
+
+@keyframes FadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

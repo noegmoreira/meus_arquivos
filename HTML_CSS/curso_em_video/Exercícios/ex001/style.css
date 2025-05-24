@@ -1,0 +1,17 @@
+body {
+        text-align: center;
+        color: white;
+        background-color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+}
+
+p {
+        background-color: blue;
+        font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+        font-style: oblique;
+        font-size: 25px;
+}

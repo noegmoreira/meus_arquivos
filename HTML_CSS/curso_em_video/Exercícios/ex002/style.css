@@ -1,0 +1,18 @@
+@keyframes animado {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100vw); }
+}
+
+.animado {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 2em;
+    color: blue;
+    font-weight: bold;
+    animation: animado 5s linear infinite;
+}
+
+#brasil::before {
+    content: "\1F1E7\1F1F7"; /* Código Unicode da bandeira */
+    padding-right: 4px;
+}

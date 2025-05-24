@@ -1,0 +1,157 @@
+/* Estilo totalmente novo e minimalista com toque moderno e suave */
+
+@font-face {
+    font-family: 'Nexa';
+    src: url(Fonts/Nexa-Heavy.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #ff6b6b;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Nexa', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #1a1a1a, #121212);
+    color: #e0e0e0;
+    padding: 10%;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #50bfff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 12px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+a:hover {
+    color: #000;
+    background-color: #50bfff;
+    border: 2px solid #fff;
+    transform: scale(1.05);
+    border-radius: 50px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 18px;
+    color: #c9c9c9;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #50bfff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #d1d1d1;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.neon {
+    font-size: 36px;
+    font-weight: bold;
+    color: #50bfff;
+    text-shadow: 0 0 5px #50bfff, 0 0 10px #50bfff, 0 0 20px #50bfff;
+    animation: neonCores 2s infinite alternate;
+}
+
+@keyframes neonCores {
+    0% { text-shadow: 0 0 5px #50bfff, 0 0 10px #50bfff, 0 0 20px #50bfff; }
+    50% { text-shadow: 0 0 10px #1f7aec, 0 0 20px #1f7aec, 0 0 30px #1f7aec; }
+    100% { text-shadow: 0 0 5px #50bfff, 0 0 10px #50bfff, 0 0 20px #50bfff; }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.95);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 2px solid #444;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1, header h2 {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.95);
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    z-index: 1000;
+    border-top: 2px solid #444;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.img-canto {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin: 0 0 15px 15px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.img-canto:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
