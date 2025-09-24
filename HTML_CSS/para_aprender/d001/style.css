@@ -1,5 +1,5 @@
 body {
-        background: linear-gradient(to right, rgb(241, 205, 252), rgb(187, 197, 255), rgb(255, 183, 183), rgb(155, 255, 238), rgb(149, 255, 149));
+        background: linear-gradient(to 90deg, rgb(241, 205, 252), rgb(187, 197, 255), rgb(255, 183, 183), rgb(155, 255, 238), rgb(149, 255, 149));
         text-align: center;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
