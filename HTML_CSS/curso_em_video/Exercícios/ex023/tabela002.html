@@ -57,6 +57,14 @@
                         background-color: #707070;
                 }
 
+                caption {
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        padding: 10px;
+                        background-color: #999999;
+                        border: #707070 2px solid;
+                }
+
                 thead,
                 tfoot {
                         background-color: #303030;
@@ -80,7 +88,8 @@
         <h1>Uso de Tabelas Grandes</h1>
         <!-- 
         Anatomia Para Tabelas Grandes
-        TABLE 
+        TABLE
+        CAPITION 
              THEAD
                 TR, TD, TH
              TBODY
@@ -90,11 +99,14 @@
         -->
 
         <table>
+                <caption>
+                        População das Unidades Federativas
+                </caption>
                 <thead>
                         <tr>
                                 <td></td>
                                 <th>Estado</th>
-                                <th>População</th>
+                                <th style="width: 50px;">População</th>
                         </tr>
                 </thead>
                 <tbody>
