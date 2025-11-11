@@ -16,14 +16,8 @@
                         width: 500px;
                         border-collapse: collapse;
                         margin: 20px 0;
-                        background-color: rgb(226, 226, 226);
-                        border: 2px solid #707070;
-                }
-
-                table:hover {
-                        transform: scale(1.02);
-                        transition: all 1.3s ease;
-                        box-shadow: 2px 2px 5px rgb(0, 0, 0);
+                        border: 2px solid #363636;
+                        position: relative;
                 }
 
                 td,
@@ -32,42 +26,22 @@
                         padding: 8px;
                 }
 
-                tr:hover {
-                        background-color: #8f8f8f;
-                        color: white;
-                        border: 2px solid rgb(54, 54, 54);
-                        transform: scale(1.03);
-                        transition: all 0.3s ease;
-                }
-
-                .importante {
-                        background-color: #ffcc00;
-                        font-weight: bold;
-                }
-
-                .importante:hover {
-                        background-color: #8b7000;
-                }
-
                 .num {
                         text-align: right;
                 }
 
-                .num:hover {
-                        background-color: #707070;
-                }
 
                 caption {
                         font-size: 1.5em;
                         font-weight: bold;
                         padding: 10px;
-                        background-color: #999999;
-                        border: #707070 2px solid;
+                        background-color: #a8a8a8;
+                        border: #474747 2px solid;
                 }
 
                 thead,
                 tfoot {
-                        background-color: #303030;
+                        background-color: #555555;
                         color: white;
                 }
 
@@ -75,10 +49,28 @@
                         font-weight: bold;
                 }
 
+                thead>tr>th {
+                        position: sticky;
+                        top: -1px;
+                        background-color: #555555;
+                        transition: all 0.3s;
+
+                }
+
+                tbody tr:nth-child(odd) {
+                        background-color: #757575;
+                        color: rgb(255, 255, 255);
+                }
+
+                tbody tr:nth-child(even) {
+                        background-color: #8d8d8d;
+                        color: rgb(255, 255, 255);
+                }
+
                 .pais {
                         text-align: center;
-                        color: #a8a8a8;
-                        background-color: #616161;
+                        color: #ffffff73;
+                        background-color: #4b4b4b;
                         padding: 0 0;
                 }
         </style>
@@ -205,7 +197,7 @@
                                 <td>Piauí</td>
                                 <td class="num">3.281.480</td>
                         </tr>
-                        <tr class="importante">
+                        <tr>
                                 <td class="pais">20</td>
                                 <td>Distrito Federal</td>
                                 <td class="num">3.055.149</td>
@@ -255,6 +247,87 @@
                         </tr>
                 </tfoot>
         </table>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, aliquam, ipsam consequatur sit ipsum
+                eveniet exercitationem cum id veniam accusamus, excepturi magnam est fugiat nulla! Vitae commodi
+                molestiae quae repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis
+                laborum dolorem, adipisci aliquam sapiente non consequuntur unde nam soluta doloribus. Debitis impedit
+                excepturi distinctio odit alias nisi, cumque nam? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Accusantium sunt quasi fugit officia et assumenda inventore autem, aliquid provident consequatur
+                veniam, vero eos sequi quam vel culpa quia fuga? Et? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Inventore cupiditate quam cumque quos fuga suscipit qui alias maxime dolorum nesciunt cum
+                assumenda ex totam deleniti, voluptatum aliquam, soluta perferendis corporis. lore</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, aliquam, ipsam consequatur sit ipsum
+                eveniet exercitationem cum id veniam accusamus, excepturi magnam est fugiat nulla! Vitae commodi
+                molestiae quae repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis
+                laborum dolorem, adipisci aliquam sapiente non consequuntur unde nam soluta doloribus. Debitis impedit
+                excepturi distinctio odit alias nisi, cumque nam? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Accusantium sunt quasi fugit officia et assumenda inventore autem, aliquid provident consequatur
+                veniam, vero eos sequi quam vel culpa quia fuga? Et? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Inventore cupiditate quam cumque quos fuga suscipit qui alias maxime dolorum nesciunt cum
+                assumenda ex totam deleniti, voluptatum aliquam, soluta perferendis corporis. lore</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, aliquam, ipsam consequatur sit ipsum
+                eveniet exercitationem cum id veniam accusamus, excepturi magnam est fugiat nulla! Vitae commodi
+                molestiae quae repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis
+                laborum dolorem, adipisci aliquam sapiente non consequuntur unde nam soluta doloribus. Debitis impedit
+                excepturi distinctio odit alias nisi, cumque nam? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Accusantium sunt quasi fugit officia et assumenda inventore autem, aliquid provident consequatur
+                veniam, vero eos sequi quam vel culpa quia fuga? Et? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Inventore cupiditate quam cumque quos fuga suscipit qui alias maxime dolorum nesciunt cum
+                assumenda ex totam deleniti, voluptatum aliquam, soluta perferendis corporis. lore</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, aliquam, ipsam consequatur sit ipsum
+                eveniet exercitationem cum id veniam accusamus, excepturi magnam est fugiat nulla! Vitae commodi
+                molestiae quae repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis
+                laborum dolorem, adipisci aliquam sapiente non consequuntur unde nam soluta doloribus. Debitis impedit
+                excepturi distinctio odit alias nisi, cumque nam? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Accusantium sunt quasi fugit officia et assumenda inventore autem, aliquid provident consequatur
+                veniam, vero eos sequi quam vel culpa quia fuga? Et? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Inventore cupiditate quam cumque quos fuga suscipit qui alias maxime dolorum nesciunt cum
+                assumenda ex totam deleniti, voluptatum aliquam, soluta perferendis corporis. lore</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, aliquam, ipsam consequatur sit ipsum
+                eveniet exercitationem cum id veniam accusamus, excepturi magnam est fugiat nulla! Vitae commodi
+                molestiae quae repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis
+                laborum dolorem, adipisci aliquam sapiente non consequuntur unde nam soluta doloribus. Debitis impedit
+                excepturi distinctio odit alias nisi, cumque nam? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Accusantium sunt quasi fugit officia et assumenda inventore autem, aliquid provident consequatur
+                veniam, vero eos sequi quam vel culpa quia fuga? Et? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Inventore cupiditate quam cumque quos fuga suscipit qui alias maxime dolorum nesciunt cum
+                assumenda ex totam deleniti, voluptatum aliquam, soluta perferendis corporis. lore</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, aliquam, ipsam consequatur sit ipsum
+                eveniet exercitationem cum id veniam accusamus, excepturi magnam est fugiat nulla! Vitae commodi
+                molestiae quae repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis
+                laborum dolorem, adipisci aliquam sapiente non consequuntur unde nam soluta doloribus. Debitis impedit
+                excepturi distinctio odit alias nisi, cumque nam? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Accusantium sunt quasi fugit officia et assumenda inventore autem, aliquid provident consequatur
+                veniam, vero eos sequi quam vel culpa quia fuga? Et? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Inventore cupiditate quam cumque quos fuga suscipit qui alias maxime dolorum nesciunt cum
+                assumenda ex totam deleniti, voluptatum aliquam, soluta perferendis corporis. lore</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, aliquam, ipsam consequatur sit ipsum
+                eveniet exercitationem cum id veniam accusamus, excepturi magnam est fugiat nulla! Vitae commodi
+                molestiae quae repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis
+                laborum dolorem, adipisci aliquam sapiente non consequuntur unde nam soluta doloribus. Debitis impedit
+                excepturi distinctio odit alias nisi, cumque nam? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Accusantium sunt quasi fugit officia et assumenda inventore autem, aliquid provident consequatur
+                veniam, vero eos sequi quam vel culpa quia fuga? Et? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Inventore cupiditate quam cumque quos fuga suscipit qui alias maxime dolorum nesciunt cum
+                assumenda ex totam deleniti, voluptatum aliquam, soluta perferendis corporis. lore</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, aliquam, ipsam consequatur sit ipsum
+                eveniet exercitationem cum id veniam accusamus, excepturi magnam est fugiat nulla! Vitae commodi
+                molestiae quae repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis
+                laborum dolorem, adipisci aliquam sapiente non consequuntur unde nam soluta doloribus. Debitis impedit
+                excepturi distinctio odit alias nisi, cumque nam? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Accusantium sunt quasi fugit officia et assumenda inventore autem, aliquid provident consequatur
+                veniam, vero eos sequi quam vel culpa quia fuga? Et? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Inventore cupiditate quam cumque quos fuga suscipit qui alias maxime dolorum nesciunt cum
+                assumenda ex totam deleniti, voluptatum aliquam, soluta perferendis corporis. lore</p>
+
 
 </body>
 
