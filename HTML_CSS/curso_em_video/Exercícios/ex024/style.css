@@ -1,0 +1,60 @@
+body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px;
+}
+
+table {
+        width: 50%;
+        border-collapse: collapse;
+        border: 3px solid rgb(51, 51, 51);
+}
+
+caption {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        animation: BGColor 4s infinite;
+        transition: ease-in-out 0.5s;
+}
+
+
+th,
+td {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        text-align: center;
+
+}
+
+@keyframes BGColor {
+        0% {
+                background-color: rgb(65, 40, 40);
+                color: rgb(255, 203, 203);
+                border: dotted rgba(255, 255, 255, 0.459) 3px;
+        }
+
+        15% {
+                color: rgb(203, 204, 255);
+                background-color: rgb(51, 44, 71);
+                border: dashed rgba(4, 0, 255, 0.459) 3px;
+        }
+
+        50% {
+                color: rgb(209, 255, 203);
+                background-color: rgb(47, 77, 50);
+                border: dotted rgba(255, 255, 255, 0.459) 3px;
+        }
+
+        85% {
+                color: rgb(203, 204, 255);
+                background-color: rgb(51, 44, 71);
+                border: dashed rgba(0, 26, 255, 0.459) 3px;
+        }
+
+        100% {
+                color: rgb(255, 203, 203);
+                background-color: rgb(65, 40, 40);
+                border: dotted rgba(255, 255, 255, 0.459) 3px;
+        }
+}
