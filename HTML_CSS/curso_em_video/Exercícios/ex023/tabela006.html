@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-variant: small-caps;
+            animation: pisca 1s infinite;
+        }
+
+        th,
+        td {
+            border: 1px solid #00000042;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #c9c9c9;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ececec;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        td:hover {
+            background-color: #d1e7fd;
+            transition: background-color 0.6s;
+        }
+
+        #container {
+            overflow-x: auto;
+            overflow-y: auto;
+            height: 300px;
+            width: 300px;
+            border: 5px solid #00000042;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.281);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes pisca {
+            0% {
+                color: black;
+                text-shadow: 0 0 5px rgba(0, 0, 0, 0.568);
+            }
+
+            50% {
+                color: rgb(255, 0, 0);
+                text-shadow: 0 0 5px rgba(255, 0, 0, 0.568);
+            }
+
+            100% {
+                color: black;
+                text-shadow: 0 0 5px rgba(51, 0, 0, 0.568);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, non laudantium eum quos ullam ipsam sed
+        amet, quo vitae, placeat perspiciatis ut commodi mollitia sint? Ratione veritatis quisquam odit velit?
+    </p>
+
+    <div id="container">
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV 40º</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Notebook</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Tablet</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Smartphone</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Monitor</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Impressora</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
