@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício de Tabela</title>
+        <style>
+                body {
+                        font-family: Arial, sans-serif;
+                        margin: 20px;
+                }
+
+                table {
+                        width: 50%;
+                        border-collapse: collapse;
+                        margin: 20px 0;
+                }
+
+                th,
+                td {
+                        border: 1px solid #00000080;
+                        padding: 8px;
+                        text-align: left;
+                }
+
+                th {
+                        background-color: #f2f2f2;
+                        text-align: center;
+                }
+
+                caption {
+                        caption-side: top;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                        font-variant: small-caps;
+                        animation: pisca 1s infinite;
+                }
+
+                .destaque {
+                        background-color: #ffeb3b80;
+                        color: rgb(84, 94, 0);
+                }
+
+                col.cnome {
+                        height: 40%;
+                        background-color: rgb(195, 195, 255);
+                }
+
+                col.cgrupo {
+                        background-color: rgb(195, 255, 195);
+                }
+
+                col.cprofissao {
+                        background-color: rgb(255, 195, 195);
+                }
+
+                @keyframes pisca {
+                        0% {
+                                color: black;
+                        }
+
+                        50% {
+                                color: rgb(0, 4, 255);
+                        }
+
+                        100% {
+                                color: rgb(0, 0, 0);
+                        }
+                }
+        </style>
+</head>
+
+<body>
+        <h1>Exercício de Tabela</h1>
+
+        <table>
+                <colgroup>
+                        <col class="cnome">
+                        <col class="cgrupo" span="2">
+                        <col class="cprofissao">
+                </colgroup>
+                <caption>Cadastro</caption>
+                <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Sexo</th>
+                        <th scope="col">Idade</th>
+                        <th scope="col">Profição</th>
+                </tr>
+                <tr>
+                        <td>Ana Maria</td>
+                        <td>F</td>
+                        <td>25</td>
+                        <td>Jornalista</td>
+                </tr>
+                <tr>
+                        <td>José Silveira</td>
+                        <td>M</td>
+                        <td>58</td>
+                        <td>Vendedor</td>
+                </tr>
+                <tr>
+                        <td>Cláudia Santos</td>
+                        <td>F</td>
+                        <td>32</td>
+                        <td>Advogada</td>
+                </tr>
+                <tr>
+                        <td>Marcos Paulo</td>
+                        <td>M</td>
+                        <td>41</td>
+                        <td>Engenheiro</td>
+                </tr>
+                <tr>
+                        <td>Fernanda Lima</td>
+                        <td>F</td>
+                        <td>29</td>
+                        <td>Médica</td>
+                </tr>
+                <tr>
+                        <td>Rafael Costa</td>
+                        <td>M</td>
+                        <td>36</td>
+                        <td>Professor</td>
+                </tr>
+                <tr>
+                        <td>Patrícia Gomes</td>
+                        <td>F</td>
+                        <td>45</td>
+                        <td>Arquiteta</td>
+                </tr>
+                <tr>
+                        <td>Lucas Ferreira</td>
+                        <td>M</td>
+                        <td>22</td>
+                        <td>Estudante</td>
+                </tr>
+                <tr>
+                        <td>Juliana Ribeiro</td>
+                        <td>F</td>
+                        <td>38</td>
+                        <td>Designer</td>
+                </tr>
+                <tr>
+                        <td>André Martins</td>
+                        <td>M</td>
+                        <td>50</td>
+                        <td>Mecânico</td>
+                </tr>
+                <tr class="destaque">
+                        <td>Noé Moreira</td>
+                        <td>M</td>
+                        <td>12</td>
+                        <td>Estudante</td>
+                </tr>
+                <tr>
+                        <td>Sandra Alves</td>
+                        <td>F</td>
+                        <td>27</td>
+                        <td>Fotógrafa</td>
+                </tr>
+                <tr>
+                        <td>Tiago Nunes</td>
+                        <td>M</td>
+                        <td>33</td>
+                        <td>Chef de Cozinha</td>
+                </tr>
+                <tr>
+                        <td>Carla Mendes</td>
+                        <td>F</td>
+                        <td>40</td>
+                        <td>Psicóloga</td>
+                </tr>
+        </table>
+</body>
+
+</html>
