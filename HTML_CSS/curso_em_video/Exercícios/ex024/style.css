@@ -1,0 +1,99 @@
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: aliceblue;
+  }
+
+  h1 {
+      color: #333;
+      animation: colorChange 5s infinite;
+  }
+
+  p {
+      margin-bottom: 15px;
+  }
+
+  @keyframes colorChange {
+      0% {
+          color: #333;
+      }
+
+      50% {
+          color: #007BFF;
+      }
+
+      100% {
+          color: #333;
+      }
+  }
+
+  iframe {
+      border: 2px solid #00000071;
+      border-radius: 10px;
+      margin: 20px 0;
+      animation: borderPulse 4s infinite;
+  }
+
+  #principal {
+      width: 100%;
+      height: 300px;;
+  }
+
+  @keyframes borderPulse {
+      0% {
+          border-color: #00000071;
+      }
+
+      50% {
+          border-color: #007BFF;
+      }
+
+      100% {
+          border-color: #00000071;
+      }
+  }
+
+  @keyframes backgroundPulse {
+      0% {
+          background-color: lavender;
+      }
+
+      50% {
+          background-color:
+              #b1b1c4;
+          color: rgb(44, 0, 114);
+      }
+
+      100% {
+          background-color: lavender;
+      }
+  }
+
+    form {
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+        animation: backgroundPulse 6s infinite;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+        transition: background-color 0.3s ease;
+    }
