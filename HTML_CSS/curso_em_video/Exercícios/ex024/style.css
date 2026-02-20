@@ -35,9 +35,17 @@
       animation: borderPulse 4s infinite;
   }
 
+  iframe:hover {
+      transform: scale(1.05);
+      border: 5px solid #00000071;
+      transition: transform 0.3s ease;
+         transition: border 0.3s ease;
+  }
+
   #principal {
       width: 100%;
-      height: 300px;;
+      height: 300px;
+      ;
   }
 
   @keyframes borderPulse {
@@ -70,30 +78,30 @@
       }
   }
 
-    form {
-        background-color: #f4f4f4;
-        padding: 20px;
-        border-radius: 5px;
-        animation: backgroundPulse 6s infinite;
-    }
+  form {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 5px;
+      animation: backgroundPulse 6s infinite;
+  }
 
-    input[type="text"] {
-        padding: 10px;
-        width: 200px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+  input[type="text"] {
+      padding: 10px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
 
-    input[type="submit"] {
-        padding: 10px 20px;
-        background-color: #007BFF;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+  input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
 
-    input[type="submit"]:hover {
-        background-color: #0056b3;
-        transition: background-color 0.3s ease;
-    }
+  input[type="submit"]:hover {
+      background-color: #0056b3;
+      transition: background-color 0.3s ease;
+  }
