@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+label[for="inome"] {
+    color: #007BFF;
+}
+
+label[for="isobrenome"] {
+    color: #28A745;
+}
+
+label:hover {
+    color: #000000;
+    transition: all 0.3s ease;
+}
