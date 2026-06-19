@@ -16,15 +16,23 @@ label {
     margin-bottom: 10px;
 }
 
-label[for="inome"] {
-    color: #007BFF;
+::placeholder {
+    color: #34209a80;
+    animation: placeholder 1s ease-in-out infinite;
+    font-style: italic;
 }
 
-label[for="isobrenome"] {
-    color: #28A745;
-}
 
-label:hover {
-    color: #000000;
-    transition: all 0.3s ease;
+
+
+@keyframes placeholder {
+    0% {
+        color: #34209a80;
+    }
+    50% {
+        color: #00000000;
+    }
+    100% {
+        color: #34209a80;
+    }
 }
