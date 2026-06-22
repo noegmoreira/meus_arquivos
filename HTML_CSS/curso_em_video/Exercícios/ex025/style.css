@@ -22,18 +22,13 @@ label {
     font-style: italic;
 }
 
-input[type="text"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
 input[type="submit"] {
     border-radius: 5px;
     border: none;
     padding: 5px 10px;
     color: white;
     background-color: #309a20;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 input[type="reset"] {
@@ -42,6 +37,40 @@ input[type="reset"] {
     padding: 5px 10px;
     color: white;
     background-color: #a03020;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+input[type="submit"]:hover {
+    background-color: #00ff22;
+    color: #000000;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+
+}
+
+input[type="reset"]:hover {
+    background-color: #ff001e;
+    color: #000000;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    position: relative;
+
+}
+
+input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+}
+
+input:focus {
+    border-color: #309a20;
+    box-shadow: 0 0 5px #309a20;
+    animation: lightup 0.5s linear infinite;
+    outline: none;
 }
 
 
@@ -54,8 +83,26 @@ input[type="reset"] {
     50% {
         color: #00000000;
     }
-
+    
     100% {
         color: #34209a80;
+    }
+}
+
+@keyframes lightup {
+    0% {
+        box-shadow: 0 0 5px #309a20;
+    }
+
+    25% {
+        box-shadow: 0 0 10px #309a20;
+    }
+
+    50% {
+        box-shadow: 0 0 15px #309a20;
+    }
+    
+    100% {
+        box-shadow: 0 0 10px #309a20;
     }
 }
