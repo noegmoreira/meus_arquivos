@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário 005</title>
+</head>
+
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="Masculino">
+            <label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="Feminino">
+            <label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut">
+            <label for="iesfut">Football</label>
+            <input type="checkbox" name="esbas" id="iesbas">
+            <label for="iesbas">Basquete</label>
+            <input type="checkbox" name="esvol" id="iesvol">
+            <label for="iesvol">Volei</label>
+            <input type="checkbox" name="esten" id="iesten">
+            <label for="iesten">Tênis</label>
+            <input type="checkbox" name="esnat" id="iesnat">
+            <label for="iesnat">natação</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Cores</legend>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor">
+        </fieldset>
+        <fieldset>
+            <legend>Nível de Satisfação</legend>
+            <label for="inivel">Satisfação: </label>
+            <input type="range" name="nivel" id="inivel">
+        </fieldset>
+        <fieldset>
+            <legend>Fotos</legend>
+            <label for="ifoto">Foto:</label>
+            <input type="file" name="foto" id="ifoto">
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
